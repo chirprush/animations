@@ -33,8 +33,8 @@ const setup = () => {
 
 	for (let _ = 0; _ < number; _++) {
 		points.push(new Point(
-			Math.floor(Math.random() * window.innerWidth),
-			Math.floor(Math.random() * window.innerHeight),
+			Math.floor(Math.random() * window.innerWidth * 0.5) + window.innerWidth * 0.25,
+			Math.floor(Math.random() * window.innerHeight * 0.5) + window.innerHeight * 0.25,
 		));
 	}
 };
