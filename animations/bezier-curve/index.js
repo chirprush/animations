@@ -100,4 +100,3 @@ const windowResize = () => {
 window.setup = setup;
 window.draw = draw;
 window.windowResize = windowResize;
-window.points = points;
