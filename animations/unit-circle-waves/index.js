@@ -112,3 +112,5 @@ window.draw = () => {
 window.windowResize = () => {
 	resizeCanvas(window.innerWidth, window.innerHeight);
 }
+
+window.onresize = window.windowResize;
