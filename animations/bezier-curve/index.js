@@ -25,7 +25,12 @@ class Point {
 	}
 }
 
-const smooth = (t) => 0.5 * (Math.sin(2 * t * Math.PI / 2 - Math.PI / 2) + 1);
+const smooth = (t) => Math.pow(Math.sin(Math.PI / 2 * t), 2);
+// For coefficients in the exponent less than or equal to 1, the
+// function acts like a normal smoothing function with a range of [0,1].
+// For values greater than 1, this function goes over 1 in the
+// range and makes stuff look really cool, albeit incorrect.
+// const smooth = (t) => t * Math.exp(1.2 * (-t + 1));
 
 const CURVE_FRAMES = 175;
 const MOVE_FRAMES = 50;
