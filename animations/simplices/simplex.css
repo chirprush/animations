@@ -1,0 +1,27 @@
+h1 {
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    font-family: "Noto Sans";
+    color: white;
+    font-size: 40px;
+}
+
+.rotation-button {
+    background: #181c24;
+    color: #7f7f7f;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-on {
+    /* background: #383c44; */
+    color: white;
+}
