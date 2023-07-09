@@ -445,12 +445,21 @@ const draw = () => {
     translate(bigDim / 4, smallDim / 2);
     projectionSimplex3.render();
 
-    simplex3RotationButtons.forEach((button, i) => {
-        button.position(
-            bigDim / 4 + 90 * (i - 1) - 50,
-            smallDim / 2 + 200
-        );
-    });
+    if (bigDim === width) {
+        simplex3RotationButtons.forEach((button, i) => {
+            button.position(
+                bigDim / 4 + 90 * (i - 1) - 50,
+                smallDim / 2 + 200
+            );
+        });
+    } else {
+        simplex3RotationButtons.forEach((button, i) => {
+            button.position(
+                width / 2 + (i - 1) * 100 - 35,
+                smallDim / 2 + 160
+            );
+        });
+    }
 
     if (bigDim === width) {
         translate(bigDim / 2, 0);
@@ -467,7 +476,7 @@ const draw = () => {
         simplex4RotationButtons.forEach((button, i) => {
             button.position(
                 smallDim / 2 + 80 * (i % 3 - 1) - 40,
-                13 * bigDim / 20 + 200 + Math.floor(i / 3) * 40
+                13 * bigDim / 20 + 160 + Math.floor(i / 3) * 40
             );
         });
     }

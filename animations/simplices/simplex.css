@@ -2,9 +2,9 @@ h1 {
     position: fixed;
     width: 100vw;
     text-align: center;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans", sans-serif;
     color: white;
-    font-size: 40px;
+    font-size: 1.1em;
 }
 
 .rotation-button {
