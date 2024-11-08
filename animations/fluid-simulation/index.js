@@ -35,9 +35,7 @@ class Cell {
         let c = colors[this.color];
         fill(c[0], c[1], c[2], 255);
         stroke(c[0], c[1], c[2], 255);
-
-        // Maybe change this later
-        noStroke();
+        strokeWeight(2);
 
         rect(
             paddingX + x * pixelSize,
